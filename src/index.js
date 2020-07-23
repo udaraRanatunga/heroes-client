@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import "bootstrap/dist/css/bootstrap.css";
 import Hero from './components/Hero';
+import Heroes from './components/Heroes';
 /*import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -20,4 +21,4 @@ serviceWorker.unregister();
 */
 let firstElement = <h1>Hello world</h1>;
 
-ReactDOM.render(<Hero/>,document.getElementById('root'));
+ReactDOM.render(<Heroes/>,document.getElementById('root'));
