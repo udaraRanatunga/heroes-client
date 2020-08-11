@@ -14,15 +14,15 @@ class Hero extends Component {
           <ul>{this.showMovies()}</ul>
           <button
             className="btn btn-info"
-            onClick={() => {
-              this.likeAvenger(1);
-            }}
+            onClick={this.props.onLike}
           >
             Like{" "}
             <span className="badge badge-light">
               {this.props.avenger.likeCount}
             </span>
-          </button>
+          
+          </button>{" "}
+          <button className="btn btn-danger" onClick={this.props.onDelete}> Delete</button>
         </div>
       </div>
     );
